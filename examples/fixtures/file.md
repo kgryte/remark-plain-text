@@ -1,14 +1,26 @@
-remark-plain-text
+beep
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][build-image]][build-url] [![Coverage Status][coverage-image]][coverage-url] [![Dependencies][dependencies-image]][dependencies-url]
 
-> [remark][remark] plugin to compile Markdown to plain text.
+> [Beep][beep] boop.
+
+<!-- <intro> -->
+Beep boop is defined as
+
+<!-- <equation class="equation" label="eq:afoo" align="center" raw="x = y" alt="foo"> -->
+<div class="equation" align="center" data-raw-text="x = y" data-equation="eq:foo">
+    <img src="./docs/img/foo.svg" alt="foo">
+    <br>
+</div>
+
+<!-- </equation> -->
+<!-- </intro> -->
 
 <!-- <installation> -->
 ## Installation
 
 ``` bash
-$ npm install remark-plain-text
+$ npm install beep-boop
 ```
 
 <!-- </installation> -->
@@ -17,17 +29,31 @@ $ npm install remark-plain-text
 ## Usage
 
 ``` javascript
-var toPlainText = require( 'remark-plain-text' );
+var beepboop = require( 'beep-boop' );
 ```
 
-#### toPlainText()
+<a name="beepboop"></a>
+#### beepboop( [options] )
 
-Compiles Markdown to plain text.
+Beep [boop][boop].
 
 ``` javascript
-var remark = require( 'remark' );
+var bebop = beepboop();
+```
 
-remark.use( toPlainText );
+The function accepts the following options:
+
+* __foo__
+* __bar__
+
+To set options,
+
+``` javascript
+var opts = {
+    'foo': true,
+    'bar': false
+};
+var bebop = beepboop();
 ```
 
 <!-- </usage> -->
@@ -36,17 +62,9 @@ remark.use( toPlainText );
 ## Examples
 
 ``` javascript
-var fs = require( 'fs' );
-var path = require( 'path' );
-var remark = require( 'remark' );
-var toPlainText = require( 'remark-plain-text' );
+var beepboop = require( 'beep-boop' );
 
-var fpath = path.join( __dirname, 'fixtures/file.md' );
-var file = fs.readFileSync( fpath, 'utf8' );
-
-var doc = remark.use( toPlainText ).process( file );
-
-console.log( doc );
+var bebop = beepboop();
 ```
 
 To run the example code from the top-level application directory,
@@ -56,6 +74,45 @@ $ node ./examples/index.js
 ```
 
 <!-- </examples> -->
+
+<!-- <cli> -->
+---
+
+## CLI
+
+<!-- <usage> -->
+### Usage
+
+``` bash
+Usage: beepboop [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+<!-- </usage> -->
+
+<!-- <notes> -->
+### Notes
+
+1. Foo
+   * Bar
+2. Bop
+   * Bap
+     - Woot
+
+<!-- <examples> -->
+### Examples
+
+``` bash
+$ beepboop
+# => bebop
+```
+
+<!-- </examples> -->
+<!-- </cli> -->
 
 <!-- <tests> -->
 ---
@@ -99,7 +156,7 @@ $ make view-cov
 
 ## Copyright
 
-Copyright &copy; 2016. Athan Reines.
+Copyright &copy; 2016. Beep boop.
 
 <!-- </license> -->
 
@@ -126,6 +183,7 @@ Copyright &copy; 2016. Athan Reines.
 [tape]: https://github.com/substack/tape
 [istanbul]: https://github.com/gotwarlost/istanbul
 
-[remark]: https://github.com/wooorm/remark
+[beep]: beep
+[boop]: boop
 
 <!-- </links> -->

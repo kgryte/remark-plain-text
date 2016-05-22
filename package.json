@@ -32,13 +32,18 @@
     "compile",
     "transform",
     "remark",
-    "mdast"
+    "mdast",
+    "plugin"
   ],
   "bugs": {
     "url": "https://github.com/kgryte/remark-plain-text/issues"
   },
   "dependencies": {
-    "remark": "^4.2.2"
+    "remark": "^4.2.2",
+    "remark-normalize-headings": "^0.3.0",
+    "remark-squeeze-paragraphs": "^3.0.0",
+    "remark-strip-badges": "^3.0.0",
+    "remark-unlink": "^2.0.0"
   },
   "devDependencies": {
     "codecov": "1.x.x",
