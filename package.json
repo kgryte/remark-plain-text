@@ -1,0 +1,52 @@
+{
+  "name": "remark-plain-text",
+  "version": "0.0.0",
+  "description": "remark plugin to compile Markdown to plain text.",
+  "author": {
+    "name": "Athan Reines",
+    "email": "kgryte@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Athan Reines",
+      "email": "kgryte@gmail.com"
+    }
+  ],
+  "scripts": {
+    "test": "tape \"./test/*.js\"",
+    "test-cov": "istanbul cover --dir ./reports/coverage --report lcov tape -- \"./test/*.js\"",
+    "coverage": "istanbul cover --dir ./reports/codecov/coverage --report lcovonly tape -- \"./test/*.js\" && cat ./reports/codecov/coverage/lcov.info | codecov && rm -rf ./reports/codecov"
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kgryte/remark-plain-text.git"
+  },
+  "keywords": [
+    "markdown",
+    "md",
+    "mdown",
+    "plain",
+    "text",
+    "convert",
+    "compile",
+    "transform",
+    "remark",
+    "mdast"
+  ],
+  "bugs": {
+    "url": "https://github.com/kgryte/remark-plain-text/issues"
+  },
+  "dependencies": {
+    "remark": "^4.2.2"
+  },
+  "devDependencies": {
+    "codecov": "1.x.x",
+    "istanbul": "^0.4.1",
+    "jshint": "2.x.x",
+    "jshint-stylish": "2.x.x",
+    "tap-spec": "4.x.x",
+    "tape": "4.x.x"
+  },
+  "license": "MIT"
+}
