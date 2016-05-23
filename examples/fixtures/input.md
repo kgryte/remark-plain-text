@@ -60,7 +60,7 @@ var opts = {
     'foo': true,
     'bar': false
 };
-var bebop = beepboop();
+var bebop = beepboop( opts );
 ```
 
 <!-- </usage> -->
@@ -74,6 +74,7 @@ var bebop = beepboop();
 var beepboop = require( 'beep-boop' );
 
 var bebop = beepboop();
+// returns 'beep boop'
 ```
 
 To run the example code from the top-level application directory,
