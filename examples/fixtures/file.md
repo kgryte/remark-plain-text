@@ -5,18 +5,23 @@ beep
 > [Beep][beep] boop.
 
 <!-- <intro> -->
+
 Beep boop is defined as
 
 <!-- <equation class="equation" label="eq:afoo" align="center" raw="x = y" alt="foo"> -->
+
 <div class="equation" align="center" data-raw-text="x = y" data-equation="eq:foo">
     <img src="./docs/img/foo.svg" alt="foo">
     <br>
 </div>
 
 <!-- </equation> -->
+
 <!-- </intro> -->
 
+
 <!-- <installation> -->
+
 ## Installation
 
 ``` bash
@@ -25,7 +30,9 @@ $ npm install beep-boop
 
 <!-- </installation> -->
 
+
 <!-- <usage> -->
+
 ## Usage
 
 ``` javascript
@@ -33,7 +40,7 @@ var beepboop = require( 'beep-boop' );
 ```
 
 <a name="beepboop"></a>
-#### beepboop( [options] )
+#### beepboop( \[options\] )
 
 Beep [boop][boop].
 
@@ -58,7 +65,9 @@ var bebop = beepboop();
 
 <!-- </usage> -->
 
+
 <!-- <examples> -->
+
 ## Examples
 
 ``` javascript
@@ -75,12 +84,15 @@ $ node ./examples/index.js
 
 <!-- </examples> -->
 
+
 <!-- <cli> -->
+
 ---
 
 ## CLI
 
 <!-- <usage> -->
+
 ### Usage
 
 ``` bash
@@ -94,7 +106,9 @@ Options:
 
 <!-- </usage> -->
 
+
 <!-- <notes> -->
+
 ### Notes
 
 1. Foo
@@ -103,7 +117,10 @@ Options:
    * Bap
      - Woot
 
+<!-- </notes> -->
+
 <!-- <examples> -->
+
 ### Examples
 
 ``` bash
@@ -112,9 +129,12 @@ $ beepboop
 ```
 
 <!-- </examples> -->
+
 <!-- </cli> -->
 
+
 <!-- <tests> -->
+
 ---
 
 ## Tests
@@ -146,7 +166,9 @@ $ make view-cov
 
 <!-- </tests> -->
 
+
 <!-- <license> -->
+
 ---
 
 ## License
@@ -159,6 +181,7 @@ $ make view-cov
 Copyright &copy; 2016. Beep boop.
 
 <!-- </license> -->
+
 
 <!-- <links> -->
 
