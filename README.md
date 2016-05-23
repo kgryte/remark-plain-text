@@ -41,12 +41,24 @@ var path = require( 'path' );
 var remark = require( 'remark' );
 var toPlainText = require( 'remark-plain-text' );
 
-var fpath = path.join( __dirname, 'fixtures/file.md' );
-var file = fs.readFileSync( fpath, 'utf8' );
+var fpath;
+var opts;
+var file;
+var doc;
 
-var doc = remark.use( toPlainText ).process( file );
+// Load a Markdown file...
+fpath = path.join( __dirname, 'fixtures/input.md' );
+opts = {
+    'encoding': 'utf8'
+};
+file = fs.readFileSync( fpath, opts );
 
-console.log( doc );
+// Compile the Markdown file to plain text:
+doc = remark.use( toPlainText ).process( file );
+
+// Write the file to disk...
+fpath = path.join( __dirname, 'fixtures/output.md' );
+fs.writeFileSync( fpath, doc, opts );
 ```
 
 To run the example code from the top-level application directory,
